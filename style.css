@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #2C2B3D;
+    --var-green-500: #00BFA6;
+    --var-gray-600: #C2C2C2;
+    --var-white: #ffffff;
+}
+
+body {
+    background: var(--background);
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+.container {
+    max-width: 80rem;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header {
+    display: flex;
+    width: auto;
+    margin: auto;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 4.375rem;
+    
+}
+
+ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+
+    color: var(--var-white);
+}
+
+li {
+    font-weight: 600;
+    font-size: 0.875rem;
+
+}
+
+li:hover {
+    color: var(--var-green-500);
+    transition: ease 0.25s;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17.6875rem;
+    padding-top: 6.6875rem;
+}
+
+
+section {
+    max-width: 37.75rem;
+}
+
+section h1 {
+    color: var(--var-white);
+    font-size: 2.25rem;
+    padding-bottom: 3.75rem;
+    text-align: center;
+    letter-spacing: 0.17rem;
+    
+}
+
+section span {
+    color: var(--var-green-500);
+    font-weight: bold;
+}
+
+section p {
+    color: var(--var-white);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--var-gray-600);
+    padding-bottom: 2rem;
+
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    padding-top: 30rem;
+}
+
+.line {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid var(--var-green-500);
+    padding-bottom: 1.875rem;
+    width: 35rem;
+    margin: auto;
+}
+
+
+footer p {
+    color: var(--var-white);
+    text-align: center;
+}
+
+footer img {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.25rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--var-white);
+}
+
+footer a:hover {
+    color: var(--var-green-500);
+    transition: ease 0.25s;
+}
+
+@media screen and (max-width: 60rem) {
+    main {
+        flex-direction: column;
+    }
+    
+    .line {
+        width: 18rem;
+    }
+
+}
